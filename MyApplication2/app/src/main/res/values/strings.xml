@@ -10,4 +10,10 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="titulo">Titulo</string>
+    <string name="biologia">Biología</string>
+    <string name="historia">Historia</string>
+    <string name="matematicas">Matemáticas</string>
+    <string name="lenguaje">Lenguaje</string>
+    <string name="fisica">Física</string>
 </resources>

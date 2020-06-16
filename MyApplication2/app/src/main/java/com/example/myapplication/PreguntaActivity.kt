@@ -1,9 +1,10 @@
 package com.example.myapplication
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.AdapterView
 import android.widget.ArrayAdapter
-import android.widget.AutoCompleteTextView
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_pregunta.*
 
 class PreguntaActivity : AppCompatActivity() {
@@ -12,8 +13,29 @@ class PreguntaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_pregunta)
 
         val items = listOf("Material", "Design", "Components", "Android")
-        val adapter = ArrayAdapter(applicationContext, R.layout.activity_pregunta, items)
-        (Asignatura.editText as? AutoCompleteTextView)?.setAdapter(adapter)
+        val list: MutableList<String> = ArrayList()
+        list.add("Física")
+        list.add("Biología")
+        list.add("Lenguaje")
+        list.add("Matemáticas")
+        list.add("Historia")
 
+        val adapter = ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, list)
+        asignatura.adapter = adapter
+        asignatura.onItemSelectedListener = object : AdapterView.OnItemSelectedListener{
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+            }
+
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                val item :String = list[position]
+
+            }
+
+        }
     }
 }
