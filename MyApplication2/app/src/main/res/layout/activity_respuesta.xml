@@ -9,7 +9,7 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="410dp"
+        android:layout_width="match_parent"
         android:layout_height="568dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,6 +18,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:orientation="vertical">
 
 
@@ -49,7 +50,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:text="Alguien me puede decir ccual es la respuesta correcta y como se hace?"
-                    android:textSize="12dp">
+                    android:textSize="16dp">
 
                 </com.google.android.material.textview.MaterialTextView>
 
@@ -79,7 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Respuesta"
-                    android:textSize="30dp"
+                    android:textSize="30sp"
                     tools:layout_editor_absoluteX="28dp"
                     tools:layout_editor_absoluteY="27dp">
 
@@ -91,7 +92,7 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
                     android:text="La respuesta correcta es la C. Si elevamos K al cuadrado, nos queda 3k^2x - 2 +3k^-2x, si restamos 2 nos queda 3k^2x + 3k^-2x, y si bajamos el 2 del exponente de ambos números y lo multiplicamos  nos queda 9k^x + 9k^-x"
-                    android:textSize="12dp">
+                    android:textSize="16sp">
 
                 </com.google.android.material.textview.MaterialTextView>
 
@@ -110,13 +111,41 @@
 
     </ScrollView>
 
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="wrap_content"
-        android:text="Resuelto"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="Resuelto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:text="No me sirve"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.512" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
