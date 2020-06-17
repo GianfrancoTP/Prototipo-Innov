@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DCDCDC"
+    android:background="#FFFFFF"
     tools:context=".ui.slideshow.SlideshowFragment">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -59,7 +59,7 @@
         android:id="@+id/appCompatImageView2"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/ic_baseline_person_24"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,10 +69,11 @@
         android:id="@+id/view"
         android:layout_width="200dp"
         android:layout_height="1dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="100dp"
         android:background="@android:color/holo_blue_dark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Usertextview" />
 
@@ -80,7 +81,7 @@
         android:id="@+id/shapeableImageView"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/ic_mail_24"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,10 +90,12 @@
     <View
         android:layout_width="200dp"
         android:layout_height="1dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="100dp"
         android:background="@android:color/holo_blue_dark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -100,7 +103,7 @@
         android:id="@+id/appCompatImageView4"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
         android:src="@drawable/ic_baseline_account_balance_wallet_24"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,6 +116,7 @@
         android:layout_marginEnd="100dp"
         android:background="@android:color/holo_blue_dark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialTextView5" />
 
@@ -149,7 +153,7 @@
         android:id="@+id/materialTextView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="20dp"
         android:text="Preguntas respondidas: 7"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -160,7 +164,7 @@
         android:id="@+id/materialTextView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="5dp"
         android:text="Dudas resueltas: 4"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -174,6 +178,7 @@
         android:layout_marginEnd="100dp"
         android:background="@android:color/holo_blue_dark"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialTextView7" />
 

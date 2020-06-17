@@ -8,7 +8,6 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/titulo"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="368dp"
         android:layout_height="60dp"
         android:layout_margin="20dp"
@@ -17,7 +16,8 @@
         app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7">
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -26,16 +26,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
-    <androidx.appcompat.widget.AppCompatSpinner
-        android:id="@+id/asignatura"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:layout_margin="20dp"
-        android:background="@drawable/spinner_bg"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
     <TextView
         android:id="@+id/textView7"
@@ -51,28 +41,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:layout_width="187dp"
-        android:layout_height="61dp"
-        android:layout_margin="20dp"
-        android:layout_marginBottom="32dp"
-        android:text="Preguntar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/descripcion"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="368dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="16dp"
         android:hint="Descripcion"
         app:endIconMode="clear_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/asignatura">
+        app:layout_constraintTop_toBottomOf="@+id/Asignatura">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -84,24 +64,16 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/adjuntar_archivo"
-        android:background="@drawable/border"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/outlinedButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="187dp"
+        android:layout_height="55dp"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="16dp"
+        android:text="Adjuntar archivo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descripcion">
-
-        <Button
-            android:id="@+id/textButton"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:text="Adjuntar archivo" />
-    </androidx.appcompat.widget.LinearLayoutCompat>
+        app:layout_constraintTop_toBottomOf="@+id/descripcion" />
 
 
     <com.google.android.material.textfield.TextInputLayout
@@ -109,12 +81,12 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="153dp"
         android:layout_height="57dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="13dp"
         android:hint="precio"
         app:endIconMode="clear_text"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/adjuntar_archivo"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedButton"
         app:startIconDrawable="@drawable/ic_baseline_attach_money_24">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -124,6 +96,37 @@
 
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Asignatura"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="368dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:hint="Asignatura"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="192dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="Preguntar"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.material.button.MaterialButton>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
