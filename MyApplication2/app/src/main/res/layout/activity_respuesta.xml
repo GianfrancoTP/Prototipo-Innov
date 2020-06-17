@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginBottom="8dp"
-                    android:text="La respuesta correcta es la C. Si elevamos K al cuadrado, nos queda 3k^2x - 2 +3k^-2x, si restamos 2 nos queda 3k^2x + 3k^-2x, y si bajamos el 2 del exponente de ambos números y lo multiplicamos  nos queda 9k^x + 9k^-x"
+                    android:text="La respuesta correcta es la C. Si elevamos K al cuadrado, nos queda 3^2x - 2 +3^-2x, si restamos 2 nos queda 3^2x + 3^-2x, y si bajamos el 2 del exponente de ambos números y lo multiplicamos  nos queda 9^x + 9^-x"
                     android:textSize="16sp">
 
                 </com.google.android.material.textview.MaterialTextView>
@@ -103,8 +103,6 @@
                     app:srcCompat="@drawable/respuesta">
 
                 </androidx.appcompat.widget.AppCompatImageView>
-
-
             </LinearLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -112,8 +110,8 @@
     </ScrollView>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
             android:id="@+id/floating_action_button"
@@ -121,9 +119,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|left"
             android:layout_margin="16dp"
+            android:contentDescription="fab_content_desc"
             android:text="Resuelto"
-            app:icon="@drawable/ic_baseline_check_24"
-            android:contentDescription="fab_content_desc"/>
+            app:icon="@drawable/ic_baseline_check_24" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

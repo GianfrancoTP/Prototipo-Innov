@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
     tools:context=".ui.slideshow.SlideshowFragment">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -15,7 +14,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imageView"
@@ -70,10 +68,9 @@
         android:layout_width="200dp"
         android:layout_height="1dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="170dp"
         android:background="@android:color/holo_blue_dark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Usertextview" />
 
@@ -90,12 +87,10 @@
     <View
         android:layout_width="200dp"
         android:layout_height="1dp"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="170dp"
         android:background="@android:color/holo_blue_dark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -113,10 +108,9 @@
         android:layout_width="200dp"
         android:layout_height="1dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="170dp"
         android:background="@android:color/holo_blue_dark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialTextView5" />
 
@@ -134,7 +128,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mail"
+        android:text="Correo"
         android:textSize="12dp"
         app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
         app:layout_constraintTop_toBottomOf="@+id/materialTextView3" />
@@ -175,10 +169,9 @@
         android:layout_width="200dp"
         android:layout_height="1dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="170dp"
         android:background="@android:color/holo_blue_dark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/materialTextView7" />
 
