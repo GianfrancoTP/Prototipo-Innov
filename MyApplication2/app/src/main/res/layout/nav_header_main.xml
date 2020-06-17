@@ -22,9 +22,10 @@
         android:src="@mipmap/ic_vale" />
 
     <TextView
+        android:id="@+id/Usertextview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Valeria Rosales"
+        android:text="user"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView

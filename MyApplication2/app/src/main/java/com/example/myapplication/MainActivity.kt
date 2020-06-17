@@ -2,6 +2,7 @@ package com.example.myapplication
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -13,11 +14,15 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.example.myapplication.ui.gallery.*
+import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_slideshow.*
+import kotlinx.android.synthetic.main.nav_header_main.*
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
-
+    var text = "Valeria Rosales"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -29,6 +34,7 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, PreguntaActivity::class.java)
             startActivity(myIntent)
         }
+
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
         val navController = findNavController(R.id.nav_host_fragment)
@@ -38,6 +44,11 @@ class MainActivity : AppCompatActivity() {
             R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        //Usertextview.text = text
+        //usuariotextview.text = text
+        //usuariotextview1.text = text
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -50,4 +61,35 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+    public fun OnFisicaButtonPressed(view: View) {
+        val myIntent = Intent(view?.context, fisicaActivity::class.java)
+        startActivity(myIntent)
+    }
+
+    public fun OnBiologiaButtonPressed(view: View) {
+        val myIntent = Intent(view?.context, biologiaActivity::class.java)
+        startActivity(myIntent)
+    }
+
+    public fun OnMatematicasButtonPressed(view: View) {
+        val myIntent = Intent(view?.context, matematicasActivity::class.java)
+        startActivity(myIntent)
+    }
+
+    public fun OnHistoriaButtonPressed(view: View) {
+        val myIntent = Intent(view?.context, historiaActivity::class.java)
+        startActivity(myIntent)
+    }
+
+    public fun OnLenguajeButtonPressed(view: View) {
+        val myIntent = Intent(view?.context, lenguajeActivity::class.java)
+        startActivity(myIntent)
+    }
+
+    public fun OnPreguntarButtonPressed(view: View){
+        val myIntent = Intent(view?.context, matematicasActivity::class.java)
+        startActivity(myIntent)
+    }
+
 }

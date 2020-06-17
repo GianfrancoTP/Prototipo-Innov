@@ -35,7 +35,6 @@ class PreguntaActivity : AppCompatActivity() {
                 val item :String = list[position]
 
             }
-
         }
     }
 }
