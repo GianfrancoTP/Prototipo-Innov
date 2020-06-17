@@ -51,6 +51,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    fun respuesta(view: View){
+        val intent = Intent (view.context, RespuestaActivity::class.java)
+        startActivity(intent)
+    }
+
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)

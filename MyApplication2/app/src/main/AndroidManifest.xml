@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.gallery.historiaActivity"></activity>
+        <activity android:name=".RespuestaActivity"></activity>
+        <activity android:name=".ui.gallery.historiaActivity" />
         <activity android:name=".ui.gallery.matematicasActivity" />
         <activity android:name=".ui.gallery.lenguajeActivity" />
         <activity android:name=".ui.gallery.biologiaActivity" />
