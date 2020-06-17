@@ -6,28 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".ui.gallery.GalleryFragment">
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="126dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="125dp"
-        android:text="Asignaturas"
-        android:textSize="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
+        android:id="@+id/fisicaConstraint"
         android:layout_width="115dp"
         android:layout_height="115dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/button_shape_blue"
+        android:onClick="OnFisicaButtonPressed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -37,7 +26,6 @@
             android:layout_marginTop="21dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="20dp"
-            android:onClick="OnFisicaButtonPressed"
             android:src="@drawable/ic_science"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -47,20 +35,20 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
+        android:id="@+id/biologiaConstraint"
         android:layout_width="115dp"
         android:layout_height="115dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="76dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="70dp"
         android:background="@drawable/shape_green"
+        android:onClick="OnBiologiaButtonPressed"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="82dp"
             android:layout_height="89dp"
-            android:onClick="OnBiologiaButtonPressed"
             android:src="@drawable/ic_biology"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -69,20 +57,20 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout4"
+        android:id="@+id/lenguajeConstraint"
         android:layout_width="115dp"
         android:layout_height="115dp"
-        android:layout_marginStart="76dp"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="53dp"
         android:background="@drawable/shape_orange"
+        android:onClick="OnLenguajeButtonPressed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        app:layout_constraintTop_toBottomOf="@+id/fisicaConstraint">
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="82dp"
             android:layout_height="89dp"
-            android:onClick="OnLenguajeButtonPressed"
             android:src="@drawable/ic_lenguej"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -92,14 +80,15 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
+        android:id="@+id/matematicasConstraint"
         android:layout_width="115dp"
         android:layout_height="115dp"
         android:layout_marginTop="53dp"
-        android:layout_marginEnd="76dp"
+        android:layout_marginEnd="70dp"
         android:background="@drawable/shape_yellow"
+        android:onClick="OnMatematicasButtonPressed"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/biologiaConstraint">
 
         <ImageView
             android:id="@+id/imageView5"
@@ -109,7 +98,6 @@
             android:layout_marginTop="21dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="20dp"
-            android:onClick="OnMatematicasButtonPressed"
             android:src="@drawable/ic_math"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -118,14 +106,15 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout5"
+        android:id="@+id/historiaConstraint"
         android:layout_width="115dp"
         android:layout_height="115dp"
-        android:layout_marginStart="76dp"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="53dp"
         android:background="@drawable/shape_purple"
+        android:onClick="OnHistoriaButtonPressed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+        app:layout_constraintTop_toBottomOf="@+id/lenguajeConstraint">
 
         <ImageView
             android:id="@+id/imageView6"
@@ -135,7 +124,6 @@
             android:layout_marginTop="21dp"
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="20dp"
-            android:onClick="OnHistoriaButtonPressed"
             android:src="@drawable/ic_history"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -153,7 +141,7 @@
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/fisicaConstraint" />
 
     <TextView
         android:id="@+id/textView3"
@@ -165,7 +153,7 @@
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+        app:layout_constraintTop_toBottomOf="@+id/lenguajeConstraint" />
 
     <TextView
         android:id="@+id/textView4"
@@ -177,7 +165,7 @@
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/biologiaConstraint" />
 
     <TextView
         android:id="@+id/textView5"
@@ -189,7 +177,7 @@
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+        app:layout_constraintTop_toBottomOf="@+id/historiaConstraint" />
 
     <TextView
         android:id="@+id/textView6"
@@ -201,5 +189,5 @@
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+        app:layout_constraintTop_toBottomOf="@+id/matematicasConstraint" />
 </androidx.constraintlayout.widget.ConstraintLayout>

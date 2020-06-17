@@ -16,4 +16,5 @@
     <string name="matematicas">Matemáticas</string>
     <string name="lenguaje">Lenguaje</string>
     <string name="fisica">Física</string>
+    <string name="no_hay_nuevas_preguntas">No Hay Nuevas Preguntas</string>
 </resources>

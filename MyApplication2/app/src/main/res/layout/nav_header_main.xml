@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@drawable/side_nav_bar"
+    android:background="@mipmap/ic_profile_background_background1"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -19,18 +19,20 @@
         android:layout_height="100dp"
         android:layout_marginTop="5dp"
         android:contentDescription="@string/nav_header_desc"
-        android:src="@mipmap/ic_vale" />
+        android:src="@mipmap/ic_maya" />
 
     <TextView
         android:id="@+id/Usertextview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="user"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:text="Maryori López"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#FFFFFF" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="supervale@caca.cl"
-        android:id="@+id/textView" />
+        android:text="SuperMaya007@gmail.com"
+        android:textColor="#FFFFFF" />
 </LinearLayout>
